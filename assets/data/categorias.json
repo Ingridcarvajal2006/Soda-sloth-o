@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "nombre_es": "Desayunos",
+        "nombre_en": "Breakfast"
+    },
+    {
+        "id": 2,
+        "nombre_es": "Almuerzos",
+        "nombre_en": "Lunch"
+    },
+    {
+        "id": 3,
+        "nombre_es": "Comidas rápidas",
+        "nombre_en": "Fast Food"
+    },
+    {
+        "id": 4,
+        "nombre_es": "Bebidas",
+        "nombre_en": "Drinks"
+    }
+]

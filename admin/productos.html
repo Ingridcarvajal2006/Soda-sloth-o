@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Productos | Soda Sloth</title>
+
+    <link
+        rel="stylesheet"
+        href="../assets/css/global.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="../assets/css/admin.css"
+    >
+</head>
+
+
+<body class="pagina-admin">
+
+    <div class="admin-estructura">
+
+
+        <!-- MENÚ LATERAL -->
+
+        <aside
+            id="admin-sidebar"
+            class="admin-sidebar"
+        >
+
+            <div class="admin-marca">
+
+                <div class="admin-marca-icono">
+                    🦥
+                </div>
+
+                <div>
+
+                    <h2>
+                        Soda Sloth
+                    </h2>
+
+                    <p>
+                        Administración
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <nav class="admin-navegacion">
+
+                <a href="dashboard.html">
+
+                    <span class="admin-navegacion-icono">
+                        📊
+                    </span>
+
+                    Dashboard
+
+                </a>
+
+
+                <a
+                    href="productos.html"
+                    class="activo"
+                >
+
+                    <span class="admin-navegacion-icono">
+                        🍽️
+                    </span>
+
+                    Productos
+
+                </a>
+
+
+                <a href="categorias.html">
+
+                    <span class="admin-navegacion-icono">
+                        📁
+                    </span>
+
+                    Categorías
+
+                </a>
+
+
+                <a href="pedidos.html">
+
+                    <span class="admin-navegacion-icono">
+                        🛒
+                    </span>
+
+                    Pedidos
+
+                </a>
+
+
+                <a href="../index.html">
+
+                    <span class="admin-navegacion-icono">
+                        🌐
+                    </span>
+
+                    Ver sitio web
+
+                </a>
+
+            </nav>
+
+
+            <div class="admin-sidebar-pie">
+
+                <button
+                    id="boton-cerrar-sesion"
+                    class="boton-cerrar-sesion"
+                    type="button"
+                >
+
+                    <span>
+                        🚪
+                    </span>
+
+                    Cerrar sesión
+
+                </button>
+
+            </div>
+
+        </aside>
+
+
+        <!-- CONTENIDO -->
+
+        <div class="admin-contenido">
+
+
+            <!-- ENCABEZADO -->
+
+            <header class="admin-header">
+
+                <div class="admin-header-izquierda">
+
+                    <button
+                        id="boton-menu-admin"
+                        class="boton-menu-admin"
+                        type="button"
+                        aria-label="Abrir menú"
+                    >
+                        ☰
+                    </button>
+
+
+                    <div class="admin-header-titulo">
+
+                        <h1>
+                            Productos
+                        </h1>
+
+                        <p>
+                            Administración del menú del restaurante
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="admin-usuario">
+
+                    <div class="admin-usuario-avatar">
+                        A
+                    </div>
+
+                    <div class="admin-usuario-datos">
+
+                        <strong>
+                            Administrador
+                        </strong>
+
+                        <span id="correo-administrador">
+                            administrador@sodasloth.com
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </header>
+
+
+            <!-- CONTENIDO PRINCIPAL -->
+
+            <main class="admin-principal">
+
+
+                <!-- ENCABEZADO DE PÁGINA -->
+
+                <section class="admin-pagina-encabezado">
+
+                    <div>
+
+                        <span class="etiqueta-seccion">
+                            Gestión del menú
+                        </span>
+
+                        <h2>
+                            Productos
+                        </h2>
+
+                        <p>
+                            Consulta y administra los productos
+                            disponibles en el menú de Soda Sloth.
+                        </p>
+
+                    </div>
+
+
+                    <button
+                        id="boton-nuevo-producto"
+                        class="boton-admin-nuevo"
+                        type="button"
+                    >
+
+                        <span>
+                            +
+                        </span>
+
+                        Nuevo producto
+
+                    </button>
+
+                </section>
+
+
+                <!-- ESTADÍSTICAS -->
+
+                <section class="admin-estadisticas admin-estadisticas-productos">
+
+
+                    <article class="tarjeta-estadistica">
+
+                        <div class="estadistica-superior">
+
+                            <span>
+                                Total
+                            </span>
+
+                            <div class="estadistica-icono">
+                                🍽️
+                            </div>
+
+                        </div>
+
+                        <h3>
+                            Productos
+                        </h3>
+
+                        <strong
+                            id="total-productos"
+                            class="estadistica-numero"
+                        >
+                            0
+                        </strong>
+
+                    </article>
+
+
+                    <article class="tarjeta-estadistica">
+
+                        <div class="estadistica-superior">
+
+                            <span>
+                                Menú
+                            </span>
+
+                            <div class="estadistica-icono">
+                                ✅
+                            </div>
+
+                        </div>
+
+                        <h3>
+                            Disponibles
+                        </h3>
+
+                        <strong
+                            id="total-disponibles"
+                            class="estadistica-numero"
+                        >
+                            0
+                        </strong>
+
+                    </article>
+
+
+                    <article class="tarjeta-estadistica">
+
+                        <div class="estadistica-superior">
+
+                            <span>
+                                Menú
+                            </span>
+
+                            <div class="estadistica-icono">
+                                ⏸️
+                            </div>
+
+                        </div>
+
+                        <h3>
+                            No disponibles
+                        </h3>
+
+                        <strong
+                            id="total-no-disponibles"
+                            class="estadistica-numero"
+                        >
+                            0
+                        </strong>
+
+                    </article>
+
+                </section>
+
+
+                <!-- PANEL DE PRODUCTOS -->
+
+                <section class="admin-panel">
+
+
+                    <div class="admin-panel-encabezado">
+
+                        <div>
+
+                            <h2>
+                                Lista de productos
+                            </h2>
+
+                            <p>
+                                Busca, filtra y administra los
+                                productos registrados.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- FILTROS -->
+
+                    <div class="admin-filtros">
+
+
+                        <div class="admin-buscador">
+
+                            <span>
+                                🔎
+                            </span>
+
+                            <input
+                                id="buscar-producto"
+                                type="search"
+                                placeholder="Buscar producto..."
+                                autocomplete="off"
+                            >
+
+                        </div>
+
+
+                        <select
+                            id="filtro-categoria"
+                            class="admin-select"
+                        >
+
+                            <option value="todos">
+                                Todas las categorías
+                            </option>
+
+                        </select>
+
+
+                        <select
+                            id="filtro-disponibilidad"
+                            class="admin-select"
+                        >
+
+                            <option value="todos">
+                                Todos los estados
+                            </option>
+
+                            <option value="disponible">
+                                Disponibles
+                            </option>
+
+                            <option value="no-disponible">
+                                No disponibles
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- TABLA -->
+
+                    <div class="admin-tabla-contenedor">
+
+                        <table class="admin-tabla">
+
+                            <thead>
+
+                                <tr>
+
+                                    <th>
+                                        Producto
+                                    </th>
+
+                                    <th>
+                                        Categoría
+                                    </th>
+
+                                    <th>
+                                        Precio
+                                    </th>
+
+                                    <th>
+                                        Disponibilidad
+                                    </th>
+
+                                    <th>
+                                        Acciones
+                                    </th>
+
+                                </tr>
+
+                            </thead>
+
+
+                            <tbody id="tabla-productos">
+
+                                <!-- JavaScript -->
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+
+                    <!-- MENSAJE SIN PRODUCTOS -->
+
+                    <div
+                        id="mensaje-sin-productos-admin"
+                        class="admin-mensaje-vacio oculto"
+                    >
+
+                        <span class="admin-mensaje-vacio-icono">
+                            🦥
+                        </span>
+
+                        <h3>
+                            No se encontraron productos
+                        </h3>
+
+                        <p>
+                            No existen productos que coincidan
+                            con los filtros seleccionados.
+                        </p>
+
+                    </div>
+
+                </section>
+
+            </main>
+
+        </div>
+
+    </div>
+
+
+    <!-- MODAL DE PRODUCTO -->
+
+    <div
+        id="fondo-modal-producto"
+        class="admin-modal-fondo"
+    >
+
+        <section
+            id="modal-producto"
+            class="admin-modal"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="titulo-modal-producto"
+        >
+
+            <div class="admin-modal-encabezado">
+
+                <div>
+
+                    <span class="etiqueta-seccion">
+                        Gestión del menú
+                    </span>
+
+                    <h2 id="titulo-modal-producto">
+                        Nuevo producto
+                    </h2>
+
+                </div>
+
+
+                <button
+                    id="cerrar-modal-producto"
+                    class="admin-modal-cerrar"
+                    type="button"
+                    aria-label="Cerrar"
+                >
+                    ×
+                </button>
+
+            </div>
+
+
+            <form
+                id="formulario-producto"
+                class="admin-formulario"
+                novalidate
+            >
+
+                <input
+                    id="producto-id"
+                    type="hidden"
+                >
+
+
+                <div class="admin-formulario-columnas">
+
+
+                    <div class="grupo-formulario">
+
+                        <label for="producto-nombre-es">
+                            Nombre en español
+                        </label>
+
+                        <input
+                            id="producto-nombre-es"
+                            type="text"
+                            maxlength="100"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="grupo-formulario">
+
+                        <label for="producto-nombre-en">
+                            Nombre en inglés
+                        </label>
+
+                        <input
+                            id="producto-nombre-en"
+                            type="text"
+                            maxlength="100"
+                            required
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <div class="admin-formulario-columnas">
+
+
+                    <div class="grupo-formulario">
+
+                        <label for="producto-categoria">
+                            Categoría
+                        </label>
+
+                        <select
+                            id="producto-categoria"
+                            required
+                        >
+
+                            <option value="">
+                                Selecciona una categoría
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="grupo-formulario">
+
+                        <label for="producto-precio">
+                            Precio
+                        </label>
+
+                        <input
+                            id="producto-precio"
+                            type="number"
+                            min="0"
+                            step="1"
+                            required
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <div class="grupo-formulario">
+
+                    <label for="producto-descripcion-es">
+                        Descripción en español
+                    </label>
+
+                    <textarea
+                        id="producto-descripcion-es"
+                        rows="3"
+                        maxlength="300"
+                        required
+                    ></textarea>
+
+                </div>
+
+
+                <div class="grupo-formulario">
+
+                    <label for="producto-descripcion-en">
+                        Descripción en inglés
+                    </label>
+
+                    <textarea
+                        id="producto-descripcion-en"
+                        rows="3"
+                        maxlength="300"
+                        required
+                    ></textarea>
+
+                </div>
+
+
+                <div class="grupo-formulario">
+
+                    <label for="producto-imagen">
+                        Ruta de la imagen
+                    </label>
+
+                    <input
+                        id="producto-imagen"
+                        type="text"
+                        placeholder="assets/imagenes/producto.jpg"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="grupo-formulario">
+
+                    <label class="admin-switch-contenedor">
+
+                        <input
+                            id="producto-disponible"
+                            type="checkbox"
+                            checked
+                        >
+
+                        <span class="admin-switch"></span>
+
+                        <span>
+                            Producto disponible en el menú
+                        </span>
+
+                    </label>
+
+                </div>
+
+
+                <div class="admin-modal-acciones">
+
+                    <button
+                        id="cancelar-producto"
+                        class="boton-admin-secundario"
+                        type="button"
+                    >
+                        Cancelar
+                    </button>
+
+
+                    <button
+                        class="boton-admin-nuevo"
+                        type="submit"
+                    >
+                        Guardar producto
+                    </button>
+
+                </div>
+
+            </form>
+
+        </section>
+
+    </div>
+
+
+    <!-- NOTIFICACIONES -->
+
+    <div
+        id="contenedor-notificaciones"
+        class="contenedor-notificaciones"
+        aria-live="polite"
+    >
+    </div>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="../assets/js/admin.js"></script>
+
+    <script src="../assets/js/admin-productos.js"></script>
+
+</body>
+
+</html>

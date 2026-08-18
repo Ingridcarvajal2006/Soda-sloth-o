@@ -1,0 +1,1180 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Menú digital bilingüe de Soda Sloth, restaurante familiar ubicado cerca de Río Celeste, Costa Rica."
+    >
+
+    <title>Soda Sloth | Río Celeste</title>
+
+
+    <!-- ========================================
+         HOJAS DE ESTILO
+    ========================================= -->
+
+    <link
+        rel="stylesheet"
+        href="assets/css/global.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="assets/css/home.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="assets/css/responsive.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- ========================================
+         ENCABEZADO
+    ========================================= -->
+
+    <header class="encabezado-principal">
+
+        <div class="contenedor encabezado-contenido">
+
+
+            <!-- MARCA -->
+
+            <a
+                href="#inicio"
+                class="marca"
+                aria-label="Ir al inicio"
+            >
+
+                <div class="marca-icono">
+                    🦥
+                </div>
+
+
+                <div class="marca-texto">
+
+                    <span class="marca-nombre">
+                        Soda Sloth
+                    </span>
+
+                    <span
+                        class="marca-subtitulo"
+                        data-es="Sabores cerca de Río Celeste"
+                        data-en="Flavors near Río Celeste"
+                    >
+                        Sabores cerca de Río Celeste
+                    </span>
+
+                </div>
+
+            </a>
+
+
+
+            <!-- NAVEGACIÓN -->
+
+            <nav
+                class="navegacion-principal"
+                aria-label="Navegación principal"
+            >
+
+                <a
+                    href="#inicio"
+                    data-es="Inicio"
+                    data-en="Home"
+                >
+                    Inicio
+                </a>
+
+
+                <a
+                    href="#menu"
+                    data-es="Menú"
+                    data-en="Menu"
+                >
+                    Menú
+                </a>
+
+
+                <a
+                    href="#nosotros"
+                    data-es="Nosotros"
+                    data-en="About us"
+                >
+                    Nosotros
+                </a>
+
+
+                <a
+                    href="#contacto"
+                    data-es="Contacto"
+                    data-en="Contact"
+                >
+                    Contacto
+                </a>
+
+            </nav>
+
+
+
+            <!-- ACCIONES -->
+
+            <div class="encabezado-acciones">
+
+
+                <!-- IDIOMA -->
+
+                <div
+                    class="selector-idioma"
+                    aria-label="Seleccionar idioma"
+                >
+
+                    <button
+                        type="button"
+                        id="btn-es"
+                        class="boton-idioma activo"
+                        data-idioma="es"
+                    >
+                        ES
+                    </button>
+
+
+                    <button
+                        type="button"
+                        id="btn-en"
+                        class="boton-idioma"
+                        data-idioma="en"
+                    >
+                        EN
+                    </button>
+
+                </div>
+
+
+
+                <!-- CARRITO -->
+
+                <button
+                    id="boton-carrito"
+                    class="boton-carrito"
+                    type="button"
+                    aria-label="Abrir carrito"
+                >
+
+                    <span class="carrito-icono">
+                        🛒
+                    </span>
+
+                    <span
+                        class="carrito-texto"
+                        data-es="Pedido"
+                        data-en="Order"
+                    >
+                        Pedido
+                    </span>
+
+                    <span
+                        id="contador-carrito"
+                        class="contador-carrito"
+                    >
+                        0
+                    </span>
+
+                </button>
+
+
+
+                <!-- MENÚ MÓVIL -->
+
+                <button
+                    id="boton-menu-movil"
+                    class="boton-menu-movil"
+                    type="button"
+                    aria-label="Abrir menú"
+                >
+                    ☰
+                </button>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- ========================================
+         CONTENIDO PRINCIPAL
+    ========================================= -->
+
+    <main>
+
+
+        <!-- ========================================
+             HERO
+        ========================================= -->
+
+        <section
+            id="inicio"
+            class="hero"
+        >
+
+            <div class="hero-capa"></div>
+
+
+            <div class="contenedor hero-contenido">
+
+
+                <span
+                    class="hero-etiqueta"
+                    data-es="🌿 Gastronomía y naturaleza"
+                    data-en="🌿 Gastronomy and nature"
+                >
+                    🌿 Gastronomía y naturaleza
+                </span>
+
+
+                <h1>
+
+                    <span
+                        data-es="Bienvenidos a"
+                        data-en="Welcome to"
+                    >
+                        Bienvenidos a
+                    </span>
+
+                    <strong>
+                        Soda Sloth
+                    </strong>
+
+                </h1>
+
+
+                <p
+                    data-es="Comida casera, ingredientes frescos y el auténtico sabor de Costa Rica cerca de la maravillosa zona de Río Celeste."
+                    data-en="Homemade food, fresh ingredients and the authentic taste of Costa Rica near the wonderful Río Celeste area."
+                >
+                    Comida casera, ingredientes frescos y el auténtico sabor
+                    de Costa Rica cerca de la maravillosa zona de Río Celeste.
+                </p>
+
+
+                <div class="hero-botones">
+
+                    <a
+                        href="#menu"
+                        class="boton boton-principal"
+                        data-es="Ver nuestro menú"
+                        data-en="View our menu"
+                    >
+                        Ver nuestro menú
+                    </a>
+
+
+                    <a
+                        href="#nosotros"
+                        class="boton boton-secundario"
+                        data-es="Conócenos"
+                        data-en="About us"
+                    >
+                        Conócenos
+                    </a>
+
+                </div>
+
+
+
+                <div class="hero-beneficios">
+
+
+                    <div class="beneficio">
+
+                        <span class="beneficio-icono">
+                            🍃
+                        </span>
+
+                        <span
+                            data-es="Ingredientes frescos"
+                            data-en="Fresh ingredients"
+                        >
+                            Ingredientes frescos
+                        </span>
+
+                    </div>
+
+
+
+                    <div class="beneficio">
+
+                        <span class="beneficio-icono">
+                            🍽️
+                        </span>
+
+                        <span
+                            data-es="Comida casera"
+                            data-en="Homemade food"
+                        >
+                            Comida casera
+                        </span>
+
+                    </div>
+
+
+
+                    <div class="beneficio">
+
+                        <span class="beneficio-icono">
+                            🌎
+                        </span>
+
+                        <span
+                            data-es="Menú bilingüe"
+                            data-en="Bilingual menu"
+                        >
+                            Menú bilingüe
+                        </span>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ========================================
+             PRESENTACIÓN
+        ========================================= -->
+
+        <section class="seccion-presentacion">
+
+            <div class="contenedor presentacion-contenido">
+
+
+                <div class="presentacion-texto">
+
+                    <span
+                        class="etiqueta-seccion"
+                        data-es="Nuestra esencia"
+                        data-en="Our essence"
+                    >
+                        Nuestra esencia
+                    </span>
+
+
+                    <h2
+                        data-es="El sabor de Costa Rica en un ambiente natural"
+                        data-en="The taste of Costa Rica in a natural environment"
+                    >
+                        El sabor de Costa Rica en un ambiente natural
+                    </h2>
+
+
+                    <p
+                        data-es="En Soda Sloth preparamos cada plato con dedicación y el sabor de la cocina casera."
+                        data-en="At Soda Sloth we prepare every dish with dedication and the taste of homemade cooking."
+                    >
+                        En Soda Sloth preparamos cada plato con dedicación
+                        y el sabor de la cocina casera.
+                    </p>
+
+                </div>
+
+
+
+                <div class="presentacion-datos">
+
+
+                    <article class="tarjeta-dato">
+
+                        <span class="dato-icono">
+                            🥘
+                        </span>
+
+                        <h3
+                            data-es="Variedad"
+                            data-en="Variety"
+                        >
+                            Variedad
+                        </h3>
+
+                        <p
+                            data-es="Desayunos, almuerzos, comidas rápidas y bebidas."
+                            data-en="Breakfast, lunch, fast food and drinks."
+                        >
+                            Desayunos, almuerzos, comidas rápidas y bebidas.
+                        </p>
+
+                    </article>
+
+
+
+                    <article class="tarjeta-dato">
+
+                        <span class="dato-icono">
+                            🌿
+                        </span>
+
+                        <h3
+                            data-es="Naturaleza"
+                            data-en="Nature"
+                        >
+                            Naturaleza
+                        </h3>
+
+                        <p
+                            data-es="Una experiencia gastronómica inspirada en Río Celeste."
+                            data-en="A gastronomic experience inspired by Río Celeste."
+                        >
+                            Una experiencia gastronómica inspirada en Río Celeste.
+                        </p>
+
+                    </article>
+
+
+
+                    <article class="tarjeta-dato">
+
+                        <span class="dato-icono">
+                            🤎
+                        </span>
+
+                        <h3
+                            data-es="Tradición"
+                            data-en="Tradition"
+                        >
+                            Tradición
+                        </h3>
+
+                        <p
+                            data-es="El sabor y la atención de un negocio familiar."
+                            data-en="The taste and service of a family business."
+                        >
+                            El sabor y la atención de un negocio familiar.
+                        </p>
+
+                    </article>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ========================================
+             MENÚ DIGITAL
+        ========================================= -->
+
+        <section
+            id="menu"
+            class="seccion-menu"
+        >
+
+            <div class="contenedor">
+
+
+                <div class="encabezado-seccion">
+
+                    <span
+                        class="etiqueta-seccion"
+                        data-es="Descubre nuestros sabores"
+                        data-en="Discover our flavors"
+                    >
+                        Descubre nuestros sabores
+                    </span>
+
+
+                    <h2
+                        data-es="Nuestro Menú"
+                        data-en="Our Menu"
+                    >
+                        Nuestro Menú
+                    </h2>
+
+
+                    <p
+                        data-es="Selecciona una categoría y agrega tus productos favoritos al pedido."
+                        data-en="Select a category and add your favorite products to your order."
+                    >
+                        Selecciona una categoría y agrega tus productos favoritos al pedido.
+                    </p>
+
+                </div>
+
+
+
+                <!-- CATEGORÍAS -->
+
+                <div
+                    id="contenedor-categorias"
+                    class="contenedor-categorias"
+                >
+                </div>
+
+
+
+                <!-- CARGANDO -->
+
+                <div
+                    id="estado-carga"
+                    class="estado-carga"
+                >
+
+                    <div class="cargador"></div>
+
+                    <p
+                        data-es="Cargando nuestro menú..."
+                        data-en="Loading our menu..."
+                    >
+                        Cargando nuestro menú...
+                    </p>
+
+                </div>
+
+
+
+                <!-- PRODUCTOS -->
+
+                <div
+                    id="contenedor-productos"
+                    class="contenedor-productos"
+                >
+                </div>
+
+
+
+                <!-- SIN PRODUCTOS -->
+
+                <div
+                    id="mensaje-sin-productos"
+                    class="mensaje-sin-productos oculto"
+                >
+
+                    <span>
+                        🦥
+                    </span>
+
+                    <h3
+                        data-es="No hay productos disponibles"
+                        data-en="No products available"
+                    >
+                        No hay productos disponibles
+                    </h3>
+
+                    <p
+                        data-es="Actualmente no existen productos disponibles en esta categoría."
+                        data-en="There are currently no products available in this category."
+                    >
+                        Actualmente no existen productos disponibles en esta categoría.
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ========================================
+             NOSOTROS
+        ========================================= -->
+
+        <section
+            id="nosotros"
+            class="seccion-nosotros"
+        >
+
+            <div class="contenedor nosotros-contenido">
+
+
+                <div class="nosotros-imagen">
+
+                    <img
+                        src="assets/imagenes/restaurante.png"
+                        alt="Soda Sloth"
+                    >
+
+                    <div class="nosotros-distintivo">
+
+                        <span>
+                            🦥
+                        </span>
+
+                        <p
+                            data-es="Negocio familiar"
+                            data-en="Family business"
+                        >
+                            Negocio familiar
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="nosotros-texto">
+
+                    <span
+                        class="etiqueta-seccion"
+                        data-es="Sobre nosotros"
+                        data-en="About us"
+                    >
+                        Sobre nosotros
+                    </span>
+
+
+                    <h2
+                        data-es="Comida preparada con dedicación"
+                        data-en="Food prepared with dedication"
+                    >
+                        Comida preparada con dedicación
+                    </h2>
+
+
+                    <p
+                        data-es="Soda Sloth es un emprendimiento gastronómico familiar ubicado en la zona de Río Celeste, Alajuela, Costa Rica."
+                        data-en="Soda Sloth is a family gastronomic business located in the Río Celeste area, Alajuela, Costa Rica."
+                    >
+                        Soda Sloth es un emprendimiento gastronómico familiar
+                        ubicado en la zona de Río Celeste, Alajuela, Costa Rica.
+                    </p>
+
+
+                    <p
+                        data-es="Ofrecemos desayunos, almuerzos, comidas rápidas y bebidas naturales para turistas nacionales, internacionales y residentes de la comunidad."
+                        data-en="We offer breakfast, lunch, fast food and natural drinks for national and international tourists and local residents."
+                    >
+                        Ofrecemos desayunos, almuerzos, comidas rápidas y bebidas
+                        naturales para turistas nacionales, internacionales y residentes
+                        de la comunidad.
+                    </p>
+
+
+                    <div class="nosotros-caracteristicas">
+
+
+                        <div class="caracteristica">
+
+                            <span>✓</span>
+
+                            <p
+                                data-es="Atención familiar"
+                                data-en="Friendly family service"
+                            >
+                                Atención familiar
+                            </p>
+
+                        </div>
+
+
+
+                        <div class="caracteristica">
+
+                            <span>✓</span>
+
+                            <p
+                                data-es="Ingredientes frescos"
+                                data-en="Fresh ingredients"
+                            >
+                                Ingredientes frescos
+                            </p>
+
+                        </div>
+
+
+
+                        <div class="caracteristica">
+
+                            <span>✓</span>
+
+                            <p
+                                data-es="Menú en español e inglés"
+                                data-en="Menu in Spanish and English"
+                            >
+                                Menú en español e inglés
+                            </p>
+
+                        </div>
+
+
+
+                        <div class="caracteristica">
+
+                            <span>✓</span>
+
+                            <p
+                                data-es="Pedidos mediante WhatsApp"
+                                data-en="Orders through WhatsApp"
+                            >
+                                Pedidos mediante WhatsApp
+                            </p>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ========================================
+             CONTACTO
+        ========================================= -->
+
+        <section
+            id="contacto"
+            class="seccion-contacto"
+        >
+
+            <div class="contenedor">
+
+
+                <div class="encabezado-seccion">
+
+                    <span
+                        class="etiqueta-seccion"
+                        data-es="Visítanos"
+                        data-en="Visit us"
+                    >
+                        Visítanos
+                    </span>
+
+
+                    <h2
+                        data-es="Te esperamos en Soda Sloth"
+                        data-en="We are waiting for you at Soda Sloth"
+                    >
+                        Te esperamos en Soda Sloth
+                    </h2>
+
+                </div>
+
+
+
+                <div class="contacto-contenido">
+
+
+                    <article class="tarjeta-contacto">
+
+                        <span class="contacto-icono">
+                            📍
+                        </span>
+
+                        <h3
+                            data-es="Ubicación"
+                            data-en="Location"
+                        >
+                            Ubicación
+                        </h3>
+
+                        <p>
+                            Río Celeste, Alajuela, Costa Rica
+                        </p>
+
+                    </article>
+
+
+
+                    <article class="tarjeta-contacto">
+
+                        <span class="contacto-icono">
+                            🕒
+                        </span>
+
+                        <h3
+                            data-es="Horario"
+                            data-en="Schedule"
+                        >
+                            Horario
+                        </h3>
+
+                        <p
+                            data-es="Consulta nuestro horario de atención"
+                            data-en="Check our opening hours"
+                        >
+                            Consulta nuestro horario de atención
+                        </p>
+
+                    </article>
+
+
+
+                    <article class="tarjeta-contacto">
+
+                        <span class="contacto-icono">
+                            💬
+                        </span>
+
+                        <h3>
+                            WhatsApp
+                        </h3>
+
+                        <p
+                            data-es="Realiza tu pedido directamente desde nuestro menú."
+                            data-en="Place your order directly from our menu."
+                        >
+                            Realiza tu pedido directamente desde nuestro menú.
+                        </p>
+
+                    </article>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- ========================================
+         FONDO CARRITO
+    ========================================= -->
+
+    <div
+        id="fondo-carrito"
+        class="fondo-carrito"
+    >
+    </div>
+
+
+
+    <!-- ========================================
+         CARRITO
+    ========================================= -->
+
+    <aside
+        id="panel-carrito"
+        class="panel-carrito"
+        aria-label="Carrito de pedidos"
+    >
+
+
+        <div class="carrito-encabezado">
+
+            <div>
+
+                <span
+                    class="carrito-etiqueta"
+                    data-es="Tu selección"
+                    data-en="Your selection"
+                >
+                    Tu selección
+                </span>
+
+                <h2
+                    data-es="Mi pedido"
+                    data-en="My order"
+                >
+                    Mi pedido
+                </h2>
+
+            </div>
+
+
+            <button
+                id="cerrar-carrito"
+                class="cerrar-carrito"
+                type="button"
+                aria-label="Cerrar carrito"
+            >
+                ×
+            </button>
+
+        </div>
+
+
+
+        <div
+            id="contenido-carrito"
+            class="contenido-carrito"
+        >
+
+
+            <div
+                id="carrito-vacio"
+                class="carrito-vacio"
+            >
+
+                <span class="carrito-vacio-icono">
+                    🛒
+                </span>
+
+                <h3
+                    data-es="Tu pedido está vacío"
+                    data-en="Your order is empty"
+                >
+                    Tu pedido está vacío
+                </h3>
+
+                <p
+                    data-es="Agrega productos de nuestro menú para comenzar tu pedido."
+                    data-en="Add products from our menu to start your order."
+                >
+                    Agrega productos de nuestro menú para comenzar tu pedido.
+                </p>
+
+
+                <button
+                    id="boton-explorar-menu"
+                    class="boton boton-secundario"
+                    type="button"
+                    data-es="Explorar menú"
+                    data-en="Explore menu"
+                >
+                    Explorar menú
+                </button>
+
+            </div>
+
+
+
+            <div
+                id="lista-carrito"
+                class="lista-carrito"
+            >
+            </div>
+
+
+        </div>
+
+
+
+        <div
+            id="carrito-resumen"
+            class="carrito-resumen oculto"
+        >
+
+
+            <div class="carrito-total">
+
+                <span
+                    data-es="Total"
+                    data-en="Total"
+                >
+                    Total
+                </span>
+
+                <strong id="total-carrito">
+                    ₡0
+                </strong>
+
+            </div>
+
+
+
+            <button
+                id="boton-whatsapp"
+                class="boton-whatsapp"
+                type="button"
+            >
+
+                <span>
+                    💬
+                </span>
+
+                <span
+                    data-es="Realizar pedido por WhatsApp"
+                    data-en="Order through WhatsApp"
+                >
+                    Realizar pedido por WhatsApp
+                </span>
+
+            </button>
+
+
+
+            <p
+                class="carrito-aviso"
+                data-es="Serás redirigido a WhatsApp para confirmar y enviar tu pedido."
+                data-en="You will be redirected to WhatsApp to confirm and send your order."
+            >
+                Serás redirigido a WhatsApp para confirmar y enviar tu pedido.
+            </p>
+
+
+        </div>
+
+
+    </aside>
+
+
+
+    <!-- ========================================
+         PIE DE PÁGINA
+    ========================================= -->
+
+    <footer class="pie-pagina">
+
+
+        <div class="contenedor pie-contenido">
+
+
+            <div class="pie-marca">
+
+                <div class="marca-icono">
+                    🦥
+                </div>
+
+                <div>
+
+                    <h2>
+                        Soda Sloth
+                    </h2>
+
+                    <p
+                        data-es="Sabores cerca de Río Celeste"
+                        data-en="Flavors near Río Celeste"
+                    >
+                        Sabores cerca de Río Celeste
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="pie-enlaces">
+
+                <a
+                    href="#inicio"
+                    data-es="Inicio"
+                    data-en="Home"
+                >
+                    Inicio
+                </a>
+
+                <a
+                    href="#menu"
+                    data-es="Menú"
+                    data-en="Menu"
+                >
+                    Menú
+                </a>
+
+                <a
+                    href="#nosotros"
+                    data-es="Nosotros"
+                    data-en="About us"
+                >
+                    Nosotros
+                </a>
+
+                <a
+                    href="#contacto"
+                    data-es="Contacto"
+                    data-en="Contact"
+                >
+                    Contacto
+                </a>
+
+            </div>
+
+
+
+            <div class="pie-administracion">
+
+                <a
+                    href="admin/login.html"
+                    data-es="Acceso administrativo"
+                    data-en="Administrative access"
+                >
+                    ⚙ Acceso administrativo
+                </a>
+
+            </div>
+
+
+        </div>
+
+
+
+        <div class="pie-inferior">
+
+            <div class="contenedor">
+
+                <p>
+
+                    © 2026 Soda Sloth ·
+
+                    <span
+                        data-es="Proyecto Integrador UTN"
+                        data-en="UTN Integrative Project"
+                    >
+                        Proyecto Integrador UTN
+                    </span>
+
+                </p>
+
+            </div>
+
+        </div>
+
+
+    </footer>
+
+
+
+    <!-- ========================================
+         NOTIFICACIONES
+    ========================================= -->
+
+    <div
+        id="contenedor-notificaciones"
+        class="contenedor-notificaciones"
+        aria-live="polite"
+    >
+    </div>
+
+
+
+    <!-- ========================================
+         JAVASCRIPT
+
+         ORDEN DE CARGA IMPORTANTE
+    ========================================= -->
+
+    <script src="assets/js/idioma.js"></script>
+
+    <script src="assets/js/pedidos.js"></script>
+
+    <script src="assets/js/carrito.js"></script>
+
+    <script src="assets/js/main.js"></script>
+
+
+</body>
+
+</html>

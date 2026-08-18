@@ -1,0 +1,134 @@
+[
+    {
+        "id": 1,
+        "categoria_id": 1,
+        "nombre_es": "Desayuno Típico",
+        "nombre_en": "Traditional Breakfast",
+        "descripcion_es": "Delicioso desayuno costarricense acompañado de gallo pinto, huevo, queso, plátano maduro y tortilla.",
+        "descripcion_en": "Delicious Costa Rican breakfast served with gallo pinto, egg, cheese, sweet plantain and tortilla.",
+        "precio": 3500,
+        "imagen": "assets/imagenes/gallo-pinto.jpg",
+        "disponible": true
+    },
+    {
+        "id": 2,
+        "categoria_id": 1,
+        "nombre_es": "Pinto con Huevo",
+        "nombre_en": "Gallo Pinto with Egg",
+        "descripcion_es": "Tradicional gallo pinto costarricense acompañado de huevo preparado al gusto.",
+        "descripcion_en": "Traditional Costa Rican gallo pinto served with egg prepared to your preference.",
+        "precio": 2800,
+        "imagen": "assets/imagenes/gallo-pinto.jpg",
+        "disponible": true
+    },
+    {
+        "id": 3,
+        "categoria_id": 1,
+        "nombre_es": "Pancakes con Frutas",
+        "nombre_en": "Pancakes with Fruit",
+        "descripcion_es": "Suaves pancakes acompañados de frutas frescas y miel.",
+        "descripcion_en": "Soft pancakes served with fresh fruit and honey.",
+        "precio": 3200,
+        "imagen": "assets/imagenes/gallo-pinto.jpg",
+        "disponible": true
+    },
+    {
+        "id": 4,
+        "categoria_id": 2,
+        "nombre_es": "Casado con Pollo",
+        "nombre_en": "Chicken Casado",
+        "descripcion_es": "Tradicional casado costarricense con arroz, frijoles, ensalada, plátano maduro y pollo.",
+        "descripcion_en": "Traditional Costa Rican casado with rice, beans, salad, sweet plantain and chicken.",
+        "precio": 4500,
+        "imagen": "assets/imagenes/casado.jpg",
+        "disponible": true
+    },
+    {
+        "id": 5,
+        "categoria_id": 2,
+        "nombre_es": "Casado con Carne",
+        "nombre_en": "Beef Casado",
+        "descripcion_es": "Casado tradicional acompañado de arroz, frijoles, ensalada, plátano maduro y carne.",
+        "descripcion_en": "Traditional casado served with rice, beans, salad, sweet plantain and beef.",
+        "precio": 4800,
+        "imagen": "assets/imagenes/casado.jpg",
+        "disponible": true
+    },
+    {
+        "id": 6,
+        "categoria_id": 2,
+        "nombre_es": "Arroz con Pollo",
+        "nombre_en": "Chicken Rice",
+        "descripcion_es": "Arroz preparado con pollo y vegetales, acompañado de ensalada y papas.",
+        "descripcion_en": "Rice prepared with chicken and vegetables, served with salad and fries.",
+        "precio": 4200,
+        "imagen": "assets/imagenes/casado.jpg",
+        "disponible": true
+    },
+    {
+        "id": 7,
+        "categoria_id": 3,
+        "nombre_es": "Hamburguesa Sloth",
+        "nombre_en": "Sloth Burger",
+        "descripcion_es": "Hamburguesa de la casa preparada con carne, queso, vegetales frescos y nuestra salsa especial.",
+        "descripcion_en": "House burger prepared with beef, cheese, fresh vegetables and our special sauce.",
+        "precio": 4000,
+        "imagen": "assets/imagenes/hamburguesa.jpg",
+        "disponible": true
+    },
+    {
+        "id": 8,
+        "categoria_id": 3,
+        "nombre_es": "Papas Fritas",
+        "nombre_en": "French Fries",
+        "descripcion_es": "Crujientes papas fritas preparadas al momento.",
+        "descripcion_en": "Crispy french fries freshly prepared.",
+        "precio": 2000,
+        "imagen": "assets/imagenes/hamburguesa.jpg",
+        "disponible": true
+    },
+    {
+        "id": 9,
+        "categoria_id": 3,
+        "nombre_es": "Sándwich de Pollo",
+        "nombre_en": "Chicken Sandwich",
+        "descripcion_es": "Sándwich preparado con pollo, queso, vegetales frescos y salsa de la casa.",
+        "descripcion_en": "Sandwich prepared with chicken, cheese, fresh vegetables and house sauce.",
+        "precio": 3500,
+        "imagen": "assets/imagenes/hamburguesa.jpg",
+        "disponible": true
+    },
+    {
+        "id": 10,
+        "categoria_id": 4,
+        "nombre_es": "Jugo Natural",
+        "nombre_en": "Natural Juice",
+        "descripcion_es": "Refrescante bebida preparada con frutas naturales de temporada.",
+        "descripcion_en": "Refreshing drink prepared with seasonal natural fruits.",
+        "precio": 1800,
+        "imagen": "assets/imagenes/batidos.jpg",
+        "disponible": true
+    },
+    {
+        "id": 11,
+        "categoria_id": 4,
+        "nombre_es": "Café Costarricense",
+        "nombre_en": "Costa Rican Coffee",
+        "descripcion_es": "Delicioso café costarricense preparado al momento.",
+        "descripcion_en": "Delicious freshly prepared Costa Rican coffee.",
+        "precio": 1200,
+        "imagen": "assets/imagenes/batidos.jpg",
+        "disponible": true
+    },
+    {
+        "id": 12,
+        "categoria_id": 4,
+        "nombre_es": "Batido Natural",
+        "nombre_en": "Natural Smoothie",
+        "descripcion_es": "Batido refrescante preparado con frutas naturales.",
+        "descripcion_en": "Refreshing smoothie prepared with natural fruits.",
+        "precio": 2200,
+        "imagen": "assets/imagenes/batidos.jpg",
+        "disponible": true
+    }
+]

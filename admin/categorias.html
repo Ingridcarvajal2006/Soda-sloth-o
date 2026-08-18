@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Categorías | Soda Sloth</title>
+
+    <link
+        rel="stylesheet"
+        href="../assets/css/global.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="../assets/css/admin.css"
+    >
+</head>
+
+<body class="pagina-admin">
+
+    <div class="admin-estructura">
+
+
+        <!-- MENÚ LATERAL -->
+
+        <aside
+            id="admin-sidebar"
+            class="admin-sidebar"
+        >
+
+            <div class="admin-marca">
+
+                <div class="admin-marca-icono">
+                    🦥
+                </div>
+
+                <div>
+
+                    <h2>
+                        Soda Sloth
+                    </h2>
+
+                    <p>
+                        Administración
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <nav class="admin-navegacion">
+
+                <a href="dashboard.html">
+
+                    <span class="admin-navegacion-icono">
+                        📊
+                    </span>
+
+                    Dashboard
+
+                </a>
+
+
+                <a href="productos.html">
+
+                    <span class="admin-navegacion-icono">
+                        🍽️
+                    </span>
+
+                    Productos
+
+                </a>
+
+
+                <a
+                    href="categorias.html"
+                    class="activo"
+                >
+
+                    <span class="admin-navegacion-icono">
+                        📁
+                    </span>
+
+                    Categorías
+
+                </a>
+
+
+                <a href="pedidos.html">
+
+                    <span class="admin-navegacion-icono">
+                        🛒
+                    </span>
+
+                    Pedidos
+
+                </a>
+
+
+                <a href="../index.html">
+
+                    <span class="admin-navegacion-icono">
+                        🌐
+                    </span>
+
+                    Ver sitio web
+
+                </a>
+
+            </nav>
+
+
+            <div class="admin-sidebar-pie">
+
+                <button
+                    id="boton-cerrar-sesion"
+                    class="boton-cerrar-sesion"
+                    type="button"
+                >
+
+                    <span>
+                        🚪
+                    </span>
+
+                    Cerrar sesión
+
+                </button>
+
+            </div>
+
+        </aside>
+
+
+        <!-- CONTENIDO -->
+
+        <div class="admin-contenido">
+
+
+            <!-- ENCABEZADO -->
+
+            <header class="admin-header">
+
+                <div class="admin-header-izquierda">
+
+                    <button
+                        id="boton-menu-admin"
+                        class="boton-menu-admin"
+                        type="button"
+                        aria-label="Abrir menú"
+                    >
+                        ☰
+                    </button>
+
+
+                    <div class="admin-header-titulo">
+
+                        <h1>
+                            Categorías
+                        </h1>
+
+                        <p>
+                            Organización del menú del restaurante
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="admin-usuario">
+
+                    <div class="admin-usuario-avatar">
+                        A
+                    </div>
+
+                    <div class="admin-usuario-datos">
+
+                        <strong>
+                            Administrador
+                        </strong>
+
+                        <span id="correo-administrador">
+                            administrador@sodasloth.com
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </header>
+
+
+            <!-- CONTENIDO PRINCIPAL -->
+
+            <main class="admin-principal">
+
+
+                <!-- ENCABEZADO DE PÁGINA -->
+
+                <section class="admin-pagina-encabezado">
+
+                    <div>
+
+                        <span class="etiqueta-seccion">
+                            Organización del menú
+                        </span>
+
+                        <h2>
+                            Categorías
+                        </h2>
+
+                        <p>
+                            Administra las categorías utilizadas
+                            para organizar los productos del menú
+                            de Soda Sloth.
+                        </p>
+
+                    </div>
+
+
+                    <button
+                        id="boton-nueva-categoria"
+                        class="boton-admin-nuevo"
+                        type="button"
+                    >
+
+                        <span>
+                            +
+                        </span>
+
+                        Nueva categoría
+
+                    </button>
+
+                </section>
+
+
+                <!-- ESTADÍSTICAS -->
+
+                <section class="admin-estadisticas admin-estadisticas-productos">
+
+
+                    <article class="tarjeta-estadistica">
+
+                        <div class="estadistica-superior">
+
+                            <span>
+                                Organización
+                            </span>
+
+                            <div class="estadistica-icono">
+                                📁
+                            </div>
+
+                        </div>
+
+                        <h3>
+                            Total de categorías
+                        </h3>
+
+                        <strong
+                            id="total-categorias"
+                            class="estadistica-numero"
+                        >
+                            0
+                        </strong>
+
+                    </article>
+
+
+                    <article class="tarjeta-estadistica">
+
+                        <div class="estadistica-superior">
+
+                            <span>
+                                Menú
+                            </span>
+
+                            <div class="estadistica-icono">
+                                🍽️
+                            </div>
+
+                        </div>
+
+                        <h3>
+                            Productos registrados
+                        </h3>
+
+                        <strong
+                            id="total-productos-categorias"
+                            class="estadistica-numero"
+                        >
+                            0
+                        </strong>
+
+                    </article>
+
+
+                    <article class="tarjeta-estadistica">
+
+                        <div class="estadistica-superior">
+
+                            <span>
+                                Clasificación
+                            </span>
+
+                            <div class="estadistica-icono">
+                                🌿
+                            </div>
+
+                        </div>
+
+                        <h3>
+                            Categorías utilizadas
+                        </h3>
+
+                        <strong
+                            id="total-categorias-utilizadas"
+                            class="estadistica-numero"
+                        >
+                            0
+                        </strong>
+
+                    </article>
+
+                </section>
+
+
+                <!-- PANEL -->
+
+                <section class="admin-panel">
+
+
+                    <div class="admin-panel-encabezado">
+
+                        <div>
+
+                            <h2>
+                                Lista de categorías
+                            </h2>
+
+                            <p>
+                                Consulta y administra la clasificación
+                                de los productos del restaurante.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- BUSCADOR -->
+
+                    <div class="admin-filtros">
+
+                        <div class="admin-buscador">
+
+                            <span>
+                                🔎
+                            </span>
+
+                            <input
+                                id="buscar-categoria"
+                                type="search"
+                                placeholder="Buscar categoría..."
+                                autocomplete="off"
+                            >
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- TABLA -->
+
+                    <div class="admin-tabla-contenedor">
+
+                        <table class="admin-tabla">
+
+                            <thead>
+
+                                <tr>
+
+                                    <th>
+                                        Categoría
+                                    </th>
+
+                                    <th>
+                                        Nombre en inglés
+                                    </th>
+
+                                    <th>
+                                        Productos
+                                    </th>
+
+                                    <th>
+                                        Acciones
+                                    </th>
+
+                                </tr>
+
+                            </thead>
+
+
+                            <tbody id="tabla-categorias">
+
+                                <!-- JavaScript -->
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+
+                    <!-- MENSAJE VACÍO -->
+
+                    <div
+                        id="mensaje-sin-categorias"
+                        class="admin-mensaje-vacio oculto"
+                    >
+
+                        <span class="admin-mensaje-vacio-icono">
+                            🦥
+                        </span>
+
+                        <h3>
+                            No se encontraron categorías
+                        </h3>
+
+                        <p>
+                            No existen categorías que coincidan
+                            con la búsqueda realizada.
+                        </p>
+
+                    </div>
+
+                </section>
+
+            </main>
+
+        </div>
+
+    </div>
+
+
+    <!-- MODAL DE CATEGORÍA -->
+
+    <div
+        id="fondo-modal-categoria"
+        class="admin-modal-fondo"
+    >
+
+        <section
+            id="modal-categoria"
+            class="admin-modal admin-modal-pequeno"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="titulo-modal-categoria"
+        >
+
+            <div class="admin-modal-encabezado">
+
+                <div>
+
+                    <span class="etiqueta-seccion">
+                        Organización del menú
+                    </span>
+
+                    <h2 id="titulo-modal-categoria">
+                        Nueva categoría
+                    </h2>
+
+                </div>
+
+
+                <button
+                    id="cerrar-modal-categoria"
+                    class="admin-modal-cerrar"
+                    type="button"
+                    aria-label="Cerrar"
+                >
+                    ×
+                </button>
+
+            </div>
+
+
+            <form
+                id="formulario-categoria"
+                class="admin-formulario"
+                novalidate
+            >
+
+                <input
+                    id="categoria-id"
+                    type="hidden"
+                >
+
+
+                <div class="grupo-formulario">
+
+                    <label for="categoria-nombre-es">
+                        Nombre en español
+                    </label>
+
+                    <input
+                        id="categoria-nombre-es"
+                        type="text"
+                        maxlength="100"
+                        placeholder="Ejemplo: Desayunos"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="grupo-formulario">
+
+                    <label for="categoria-nombre-en">
+                        Nombre en inglés
+                    </label>
+
+                    <input
+                        id="categoria-nombre-en"
+                        type="text"
+                        maxlength="100"
+                        placeholder="Example: Breakfast"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="admin-modal-acciones">
+
+                    <button
+                        id="cancelar-categoria"
+                        class="boton-admin-secundario"
+                        type="button"
+                    >
+                        Cancelar
+                    </button>
+
+
+                    <button
+                        class="boton-admin-nuevo"
+                        type="submit"
+                    >
+                        Guardar categoría
+                    </button>
+
+                </div>
+
+            </form>
+
+        </section>
+
+    </div>
+
+
+    <!-- NOTIFICACIONES -->
+
+    <div
+        id="contenedor-notificaciones"
+        class="contenedor-notificaciones"
+        aria-live="polite"
+    >
+    </div>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="../assets/js/admin.js"></script>
+
+    <script src="../assets/js/admin-categorias.js"></script>
+
+</body>
+
+</html>

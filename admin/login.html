@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Administración | Soda Sloth</title>
+
+    <link
+        rel="stylesheet"
+        href="../assets/css/global.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="../assets/css/admin.css"
+    >
+
+</head>
+
+
+<body class="pagina-login">
+
+
+    <main class="login-principal">
+
+
+        <!-- ========================================
+             PRESENTACIÓN
+        ========================================= -->
+
+        <section class="login-presentacion">
+
+
+            <div class="login-presentacion-contenido">
+
+
+                <a
+                    href="../index.html"
+                    class="login-marca"
+                >
+
+                    <div class="marca-icono">
+                        🦥
+                    </div>
+
+
+                    <div>
+
+                        <span class="login-marca-nombre">
+                            Soda Sloth
+                        </span>
+
+                        <span class="login-marca-subtitulo">
+                            Río Celeste, Costa Rica
+                        </span>
+
+                    </div>
+
+                </a>
+
+
+
+                <div class="login-mensaje">
+
+
+                    <span class="etiqueta-login">
+
+                        🌿 Administración del restaurante
+
+                    </span>
+
+
+                    <h1>
+
+                        Gestiona Soda Sloth desde un solo lugar
+
+                    </h1>
+
+
+                    <p>
+
+                        Administra los productos, categorías,
+                        disponibilidad del menú y pedidos del
+                        restaurante mediante el panel administrativo.
+
+                    </p>
+
+
+
+                    <div class="login-caracteristicas">
+
+
+                        <div class="login-caracteristica">
+
+                            <span>
+                                ✓
+                            </span>
+
+                            <p>
+                                Gestión de productos
+                            </p>
+
+                        </div>
+
+
+
+                        <div class="login-caracteristica">
+
+                            <span>
+                                ✓
+                            </span>
+
+                            <p>
+                                Administración de categorías
+                            </p>
+
+                        </div>
+
+
+
+                        <div class="login-caracteristica">
+
+                            <span>
+                                ✓
+                            </span>
+
+                            <p>
+                                Control de disponibilidad
+                            </p>
+
+                        </div>
+
+
+
+                        <div class="login-caracteristica">
+
+                            <span>
+                                ✓
+                            </span>
+
+                            <p>
+                                Consulta y gestión de pedidos
+                            </p>
+
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+
+
+                <p class="login-presentacion-pie">
+
+                    © 2026 Soda Sloth · Proyecto Integrador UTN
+
+                </p>
+
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- ========================================
+             FORMULARIO DE INICIO DE SESIÓN
+        ========================================= -->
+
+        <section class="login-formulario-seccion">
+
+
+            <div class="login-formulario-contenedor">
+
+
+                <div class="login-icono">
+
+                    🦥
+
+                </div>
+
+
+
+                <div class="login-encabezado">
+
+
+                    <span class="etiqueta-seccion">
+
+                        Panel administrativo
+
+                    </span>
+
+
+                    <h2>
+
+                        Iniciar sesión
+
+                    </h2>
+
+
+                    <p>
+
+                        Ingresa tus credenciales para acceder
+                        a la administración de Soda Sloth.
+
+                    </p>
+
+
+                </div>
+
+
+
+                <form
+                    id="formulario-login"
+                    class="formulario-login"
+                    novalidate
+                >
+
+
+                    <!-- CORREO -->
+
+                    <div class="grupo-formulario">
+
+
+                        <label for="correo">
+
+                            Correo electrónico
+
+                        </label>
+
+
+                        <div class="campo-con-icono">
+
+
+                            <span class="campo-icono">
+
+                                ✉
+
+                            </span>
+
+
+                            <input
+                                type="email"
+                                id="correo"
+                                name="correo"
+                                placeholder="administrador@sodasloth.com"
+                                autocomplete="email"
+                                required
+                            >
+
+
+                        </div>
+
+
+                        <small
+                            id="error-correo"
+                            class="mensaje-error oculto"
+                        >
+                        </small>
+
+
+                    </div>
+
+
+
+                    <!-- CONTRASEÑA -->
+
+                    <div class="grupo-formulario">
+
+
+                        <label for="contrasena">
+
+                            Contraseña
+
+                        </label>
+
+
+                        <div class="campo-con-icono">
+
+
+                            <span class="campo-icono">
+
+                                🔒
+
+                            </span>
+
+
+                            <input
+                                type="password"
+                                id="contrasena"
+                                name="contrasena"
+                                placeholder="Ingresa tu contraseña"
+                                autocomplete="current-password"
+                                required
+                            >
+
+
+                            <button
+                                id="mostrar-contrasena"
+                                class="mostrar-contrasena"
+                                type="button"
+                                aria-label="Mostrar contraseña"
+                            >
+
+                                👁
+
+                            </button>
+
+
+                        </div>
+
+
+                        <small
+                            id="error-contrasena"
+                            class="mensaje-error oculto"
+                        >
+                        </small>
+
+
+                    </div>
+
+
+
+                    <!-- MENSAJE DEL LOGIN -->
+
+                    <div
+                        id="mensaje-login"
+                        class="mensaje-login oculto"
+                    >
+                    </div>
+
+
+
+                    <!-- BOTÓN INICIAR SESIÓN -->
+
+                    <button
+                        id="boton-iniciar-sesion"
+                        class="boton-login"
+                        type="submit"
+                    >
+
+                        <span>
+
+                            Iniciar sesión
+
+                        </span>
+
+                    </button>
+
+
+                </form>
+
+
+
+                <!-- ========================================
+                     SEPARADOR
+                ========================================= -->
+
+                <div class="login-separador">
+
+                    <span>
+
+                        Acceso restringido
+
+                    </span>
+
+                </div>
+
+
+
+                <!-- ========================================
+                     AVISO
+                ========================================= -->
+
+                <div class="login-aviso">
+
+
+                    <span>
+
+                        🔐
+
+                    </span>
+
+
+                    <p>
+
+                        Esta sección es únicamente para personal
+                        autorizado de Soda Sloth.
+
+                    </p>
+
+
+                </div>
+
+
+
+                <!-- ========================================
+                     REGRESAR AL MENÚ
+                ========================================= -->
+
+                <a
+                    href="../index.html"
+                    class="volver-inicio"
+                >
+
+                    ← Volver al menú del restaurante
+
+                </a>
+
+
+            </div>
+
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- ========================================
+         NOTIFICACIONES
+    ========================================= -->
+
+    <div
+        id="contenedor-notificaciones"
+        class="contenedor-notificaciones"
+        aria-live="polite"
+    >
+    </div>
+
+
+
+    <!-- ========================================
+         JAVASCRIPT
+    ========================================= -->
+
+    <script src="../assets/js/admin-login.js"></script>
+
+
+</body>
+
+</html>

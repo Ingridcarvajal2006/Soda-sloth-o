@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Dashboard | Soda Sloth</title>
+
+    <link
+        rel="stylesheet"
+        href="../assets/css/global.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="../assets/css/admin.css"
+    >
+
+</head>
+
+
+<body class="pagina-admin">
+
+
+    <div class="admin-estructura">
+
+
+        <!-- =================================================
+             MENÚ LATERAL
+        ================================================== -->
+
+        <aside
+            id="admin-sidebar"
+            class="admin-sidebar"
+        >
+
+
+            <div class="admin-marca">
+
+                <div class="admin-marca-icono">
+                    🦥
+                </div>
+
+                <div>
+
+                    <h2>
+                        Soda Sloth
+                    </h2>
+
+                    <p>
+                        Administración
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <nav class="admin-navegacion">
+
+
+                <a
+                    href="dashboard.html"
+                    class="activo"
+                >
+
+                    <span class="admin-navegacion-icono">
+                        📊
+                    </span>
+
+                    Dashboard
+
+                </a>
+
+
+                <a href="productos.html">
+
+                    <span class="admin-navegacion-icono">
+                        🍽️
+                    </span>
+
+                    Productos
+
+                </a>
+
+
+                <a href="categorias.html">
+
+                    <span class="admin-navegacion-icono">
+                        📁
+                    </span>
+
+                    Categorías
+
+                </a>
+
+
+                <a href="pedidos.html">
+
+                    <span class="admin-navegacion-icono">
+                        🛒
+                    </span>
+
+                    Pedidos
+
+                </a>
+
+
+                <a href="../index.html">
+
+                    <span class="admin-navegacion-icono">
+                        🌐
+                    </span>
+
+                    Ver sitio web
+
+                </a>
+
+
+            </nav>
+
+
+            <div class="admin-sidebar-pie">
+
+
+                <button
+                    id="boton-cerrar-sesion"
+                    class="boton-cerrar-sesion"
+                    type="button"
+                >
+
+                    <span>
+                        🚪
+                    </span>
+
+                    Cerrar sesión
+
+                </button>
+
+
+            </div>
+
+
+        </aside>
+
+
+        <!-- =================================================
+             CONTENIDO
+        ================================================== -->
+
+        <div class="admin-contenido">
+
+
+            <!-- =============================================
+                 ENCABEZADO
+            ============================================== -->
+
+            <header class="admin-header">
+
+
+                <div class="admin-header-izquierda">
+
+                    <button
+                        id="boton-menu-admin"
+                        class="boton-menu-admin"
+                        type="button"
+                        aria-label="Abrir menú"
+                    >
+                        ☰
+                    </button>
+
+
+                    <div class="admin-header-titulo">
+
+                        <h1>
+                            Panel administrativo
+                        </h1>
+
+                        <p>
+                            Resumen general de Soda Sloth
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="admin-usuario">
+
+
+                    <div class="admin-usuario-avatar">
+                        A
+                    </div>
+
+
+                    <div class="admin-usuario-datos">
+
+                        <strong>
+                            Administrador
+                        </strong>
+
+                        <span id="correo-administrador">
+                            administrador@sodasloth.com
+                        </span>
+
+                    </div>
+
+
+                </div>
+
+
+            </header>
+
+
+            <!-- =============================================
+                 CONTENIDO PRINCIPAL
+            ============================================== -->
+
+            <main class="admin-principal">
+
+
+                <!-- =========================================
+                     BIENVENIDA
+                ========================================== -->
+
+                <section class="dashboard-bienvenida">
+
+
+                    <div>
+
+
+                        <span class="etiqueta-seccion">
+                            Resumen del sistema
+                        </span>
+
+
+                        <h2>
+                            Bienvenido al panel de Soda Sloth
+                        </h2>
+
+
+                        <p>
+
+                            Desde este panel puedes administrar
+                            los productos, categorías, disponibilidad
+                            del menú y consultar los pedidos del
+                            restaurante.
+
+                        </p>
+
+
+                    </div>
+
+
+                    <div class="dashboard-bienvenida-icono">
+                        🦥
+                    </div>
+
+
+                </section>
+
+
+                <!-- =========================================
+                     ESTADÍSTICAS
+                ========================================== -->
+
+                <section class="admin-estadisticas">
+
+
+                    <!-- PRODUCTOS -->
+
+                    <article class="tarjeta-estadistica">
+
+
+                        <div class="estadistica-superior">
+
+                            <span>
+                                Menú
+                            </span>
+
+                            <div class="estadistica-icono">
+                                🍽️
+                            </div>
+
+                        </div>
+
+
+                        <h3>
+                            Productos
+                        </h3>
+
+
+                        <strong
+                            id="estadistica-productos"
+                            class="estadistica-numero"
+                        >
+                            0
+                        </strong>
+
+
+                    </article>
+
+
+                    <!-- CATEGORÍAS -->
+
+                    <article class="tarjeta-estadistica">
+
+
+                        <div class="estadistica-superior">
+
+                            <span>
+                                Organización
+                            </span>
+
+                            <div class="estadistica-icono">
+                                📁
+                            </div>
+
+                        </div>
+
+
+                        <h3>
+                            Categorías
+                        </h3>
+
+
+                        <strong
+                            id="estadistica-categorias"
+                            class="estadistica-numero"
+                        >
+                            0
+                        </strong>
+
+
+                    </article>
+
+
+                    <!-- DISPONIBLES -->
+
+                    <article class="tarjeta-estadistica">
+
+
+                        <div class="estadistica-superior">
+
+                            <span>
+                                Disponibilidad
+                            </span>
+
+                            <div class="estadistica-icono">
+                                ✅
+                            </div>
+
+                        </div>
+
+
+                        <h3>
+                            Productos disponibles
+                        </h3>
+
+
+                        <strong
+                            id="estadistica-disponibles"
+                            class="estadistica-numero"
+                        >
+                            0
+                        </strong>
+
+
+                    </article>
+
+
+                    <!-- PEDIDOS -->
+
+                    <article class="tarjeta-estadistica">
+
+
+                        <div class="estadistica-superior">
+
+                            <span>
+                                Solicitudes
+                            </span>
+
+                            <div class="estadistica-icono">
+                                🛒
+                            </div>
+
+                        </div>
+
+
+                        <h3>
+                            Pedidos
+                        </h3>
+
+
+                        <strong
+                            id="estadistica-pedidos"
+                            class="estadistica-numero"
+                        >
+                            0
+                        </strong>
+
+
+                    </article>
+
+
+                </section>
+
+
+                <!-- =========================================
+                     CONTENIDO INFERIOR
+                ========================================== -->
+
+                <section class="dashboard-columnas">
+
+
+                    <!-- =====================================
+                         ACCESOS RÁPIDOS
+                    ====================================== -->
+
+                    <article class="admin-panel">
+
+
+                        <div class="admin-panel-encabezado">
+
+
+                            <div>
+
+                                <h2>
+                                    Accesos rápidos
+                                </h2>
+
+                                <p>
+
+                                    Administra las principales
+                                    funciones del sistema.
+
+                                </p>
+
+                            </div>
+
+
+                        </div>
+
+
+                        <div class="dashboard-accesos">
+
+
+                            <!-- PRODUCTOS -->
+
+                            <a
+                                href="productos.html"
+                                class="dashboard-acceso"
+                            >
+
+
+                                <div class="dashboard-acceso-icono">
+                                    🍽️
+                                </div>
+
+
+                                <div>
+
+                                    <h3>
+                                        Gestionar productos
+                                    </h3>
+
+                                    <p>
+
+                                        Crear, editar y administrar
+                                        la disponibilidad de los
+                                        productos del menú.
+
+                                    </p>
+
+                                </div>
+
+
+                                <span class="dashboard-acceso-flecha">
+                                    →
+                                </span>
+
+
+                            </a>
+
+
+                            <!-- CATEGORÍAS -->
+
+                            <a
+                                href="categorias.html"
+                                class="dashboard-acceso"
+                            >
+
+
+                                <div class="dashboard-acceso-icono">
+                                    📁
+                                </div>
+
+
+                                <div>
+
+                                    <h3>
+                                        Gestionar categorías
+                                    </h3>
+
+                                    <p>
+
+                                        Organiza los productos
+                                        del menú por categorías.
+
+                                    </p>
+
+                                </div>
+
+
+                                <span class="dashboard-acceso-flecha">
+                                    →
+                                </span>
+
+
+                            </a>
+
+
+                            <!-- PEDIDOS -->
+
+                            <a
+                                href="pedidos.html"
+                                class="dashboard-acceso"
+                            >
+
+
+                                <div class="dashboard-acceso-icono">
+                                    🛒
+                                </div>
+
+
+                                <div>
+
+                                    <h3>
+                                        Consultar pedidos
+                                    </h3>
+
+                                    <p>
+
+                                        Visualiza los pedidos
+                                        registrados en el sistema.
+
+                                    </p>
+
+                                </div>
+
+
+                                <span class="dashboard-acceso-flecha">
+                                    →
+                                </span>
+
+
+                            </a>
+
+
+                        </div>
+
+
+                    </article>
+
+
+                    <!-- =====================================
+                         ESTADO DEL SISTEMA
+                    ====================================== -->
+
+                    <article class="admin-panel">
+
+
+                        <div class="admin-panel-encabezado">
+
+
+                            <div>
+
+                                <h2>
+                                    Estado del sistema
+                                </h2>
+
+                                <p>
+
+                                    Información general del
+                                    funcionamiento del menú.
+
+                                </p>
+
+                            </div>
+
+
+                        </div>
+
+
+                        <div class="dashboard-estados">
+
+
+                            <div class="dashboard-estado">
+
+
+                                <div>
+
+                                    <strong>
+                                        Menú digital
+                                    </strong>
+
+                                    <p>
+                                        Página pública del restaurante
+                                    </p>
+
+                                </div>
+
+
+                                <span class="estado estado-activo">
+                                    Activo
+                                </span>
+
+
+                            </div>
+
+
+                            <div class="dashboard-estado">
+
+
+                                <div>
+
+                                    <strong>
+                                        Menú bilingüe
+                                    </strong>
+
+                                    <p>
+                                        Español e inglés
+                                    </p>
+
+                                </div>
+
+
+                                <span class="estado estado-activo">
+                                    Activo
+                                </span>
+
+
+                            </div>
+
+
+                            <div class="dashboard-estado">
+
+
+                                <div>
+
+                                    <strong>
+                                        Carrito de pedidos
+                                    </strong>
+
+                                    <p>
+                                        Gestión de productos seleccionados
+                                    </p>
+
+                                </div>
+
+
+                                <span class="estado estado-activo">
+                                    Activo
+                                </span>
+
+
+                            </div>
+
+
+                            <div class="dashboard-estado">
+
+
+                                <div>
+
+                                    <strong>
+                                        WhatsApp
+                                    </strong>
+
+                                    <p>
+                                        Confirmación externa del pedido
+                                    </p>
+
+                                </div>
+
+
+                                <span class="estado estado-activo">
+                                    Activo
+                                </span>
+
+
+                            </div>
+
+
+                        </div>
+
+
+                    </article>
+
+
+                </section>
+
+
+            </main>
+
+
+        </div>
+
+
+    </div>
+
+
+    <!-- =====================================================
+         NOTIFICACIONES
+    ====================================================== -->
+
+    <div
+        id="contenedor-notificaciones"
+        class="contenedor-notificaciones"
+        aria-live="polite"
+    >
+    </div>
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
+
+    <script src="../assets/js/admin.js"></script>
+
+
+</body>
+
+</html>
